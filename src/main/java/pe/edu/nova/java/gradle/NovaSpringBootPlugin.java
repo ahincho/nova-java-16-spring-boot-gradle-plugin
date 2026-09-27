@@ -7,14 +7,14 @@ import org.gradle.jvm.toolchain.JavaLanguageVersion;
 
 /**
  * Convention plugin de Gradle para proyectos basados en el meta-framework
- * Galaxy Training con Spring Boot.
+ * Nova Platform con Spring Boot.
  * <p>
  * Al aplicar este plugin, el proyecto se configura automáticamente con:
  * Java 25, Spring Boot 4.0.5, repositorios, y el starter del meta-framework
  * como dependencia.
  * </p>
  *
- * @author Galaxy Training
+ * @author Nova Platform
  * @version 1.0.0
  */
 public class NovaSpringBootPlugin implements Plugin<Project> {
@@ -60,8 +60,8 @@ public class NovaSpringBootPlugin implements Plugin<Project> {
         project.getRepositories().mavenLocal();
         project.getRepositories().mavenCentral();
         // 4. Agregar dependencias a los sub-starters del meta-framework Nova.
-        // El umbrella legacy "galaxy-training-spring-boot-starter" ya no existe:
-        // hoy el repositorio nova-java-commons-spring-boot-starter publica los
+        // El starter paraguas de antes ya no se publica: hoy el repositorio
+        // nova-java-commons-spring-boot-starter publica los
         // dos sub-starters por separado, así que se agregan ambos para preservar
         // el comportamiento que tenía el plugin antes del rename.
         project.getDependencies().add("implementation", MASK_STARTER_DEPENDENCY);
