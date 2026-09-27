@@ -22,7 +22,7 @@ pluginManagement {
     repositories {
         gradlePluginPortal()
         maven {
-            url = uri("https://maven.pkg.github.com/ahincho/nova-java-spring-boot-gradle-plugin")
+            url = uri("https://maven.pkg.github.com/ahincho/nova-java-16-spring-boot-gradle-plugin")
             credentials {
                 username = providers.gradleProperty("gpr.user").orNull ?: System.getenv("GITHUB_ACTOR")
                 password = providers.gradleProperty("gpr.key").orNull ?: System.getenv("GITHUB_TOKEN")
@@ -46,7 +46,7 @@ the specific task in its own build file.
 
 ## The Maven equivalent
 
-[nova-java-spring-boot-parent](https://github.com/ahincho/nova-java-spring-boot-parent)
+[nova-java-spring-boot-parent](https://github.com/ahincho/nova-java-14-spring-boot-parent)
 carries the same conventions as a parent POM.
 
 ## Requirements
