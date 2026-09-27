@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.2](https://github.com/ahincho/nova-java-16-spring-boot-gradle-plugin/compare/v1.0.1...v1.0.2) (2026-09-27)
+
+
+### Bug Fixes
+
+* **plugin:** replace dead umbrella starter coordinates with the two sub-starters ([fe8f1db](https://github.com/ahincho/nova-java-16-spring-boot-gradle-plugin/commit/fe8f1dbc557f81c8db6d727739ab9005c2bc9dfc))
+
+
+### Documentation
+
+* add a README and adopt EPL-2.0 ([b9caa83](https://github.com/ahincho/nova-java-16-spring-boot-gradle-plugin/commit/b9caa838946cef9c04b3b69bf5017e845da6f758))
+
 ## [1.0.1](https://github.com/ahincho/nova-java-spring-boot-gradle-plugin/compare/v1.0.0...v1.0.1) (2026-07-13)
 
 
