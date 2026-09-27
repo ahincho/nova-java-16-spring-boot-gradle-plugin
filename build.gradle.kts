@@ -30,6 +30,15 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-gradle-plugin:4.0.8")
+
+    constraints {
+        // spring-boot-buildpack-platform 4.0.8 trae httpclient5 5.5.2. La restricción viaja
+        // en la metadata publicada, así que también corrige el classpath de quien aplica
+        // el plugin, no solo el de este build.
+        implementation("org.apache.httpcomponents.client5:httpclient5:5.6.4") {
+            because("CVE-2026-71290 requires httpclient5 5.6.4+")
+        }
+    }
 }
 
 gradlePlugin {
@@ -85,6 +94,7 @@ dependencyCheck {
     autoUpdate = false
     data.directory = System.getenv("NOVA_OWASP_DATA_DIR")
         ?: "${System.getProperty("user.home")}/.dependency-check-data"
+    }
 }
 
 publishing {
