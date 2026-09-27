@@ -29,7 +29,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-gradle-plugin:4.0.5")
+    implementation("org.springframework.boot:spring-boot-gradle-plugin:4.0.8")
 }
 
 gradlePlugin {
