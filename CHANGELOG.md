@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.3](https://github.com/ahincho/nova-java-16-spring-boot-gradle-plugin/compare/v1.0.2...v1.0.3) (2026-09-27)
+
+
+### Bug Fixes
+
+* **deps:** add the renamed starters at 2.0.0 and move to Spring Boot 4.0.8 ([d2bfc95](https://github.com/ahincho/nova-java-16-spring-boot-gradle-plugin/commit/d2bfc958bc61864bda913e0ba0fa903587164f38))
+* **deps:** add the renamed starters at 2.0.0 and move to Spring Boot 4.0.8 ([3741095](https://github.com/ahincho/nova-java-16-spring-boot-gradle-plugin/commit/3741095a15e19fbc1e51a75e0a5856e0f3f745e1))
+* **deps:** raise httpclient5 to 5.6.4 for CVE-2026-71290 ([10704bd](https://github.com/ahincho/nova-java-16-spring-boot-gradle-plugin/commit/10704bdb6ca0f272892f822ac4d27e56244c5bfe))
+
 ## [1.0.2](https://github.com/ahincho/nova-java-16-spring-boot-gradle-plugin/compare/v1.0.1...v1.0.2) (2026-09-27)
 
 
